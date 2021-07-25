@@ -433,18 +433,18 @@
     justify-content: space-between;
 }
 
-.container .card {
+.card {
     position: relative;
     cursor: pointer;
 }
 
-.container .card .face {
+.face {
     width: 300px;
     height: 200px;
     transition: 0.5s;
 }
 
-.container .card .face.face1 {
+.face.face1 {
     position: relative;
     background: var(--clr-dark);
     display: flex;
@@ -455,17 +455,17 @@
     border-radius: 25px;   
 }
 
-.container .card:hover .face.face1 {
+.card:hover .face.face1 {
     background: var(--clr-accent);
     transform: translateY(0px);
 }
 
-.container .card .face.face1 .content {
+.content {
     opacity: 0.75s;
     transition: 0.75s;
 }
 
-.container .card:hover .face.face1 .content {
+.card:hover .face.face1 .content {
     opacity: 1;
 }
 
@@ -483,7 +483,7 @@
     color: white;
 }
 
-.container .card .face.face2 {
+.face.face2 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -495,11 +495,11 @@
     border-radius: 25px;
 }
 
-.container .card:hover .face.face2 {
+.card:hover .face.face2 {
     transform: translateY(0);
 }
 
-.container .card .face.face1 .content .proj-icon {
+.proj-icon {
     font-size: 100px;
     text-align: center;
     max-width: 100px;
@@ -507,7 +507,7 @@
     color: white;
 }
 
-.container .caard .face.face2 .content .project-desc {
+.container .card .face.face2 .content .project-desc {
     font-size: 16px;
     font-weight: 300;
     margin: 0;
@@ -516,12 +516,6 @@
 /* formatting icons that won't cooperate */
 #eye {
     margin-left: 95px;
-}
-#connect4 {
-    margin-left: 30px;
-}
-#wheel {
-    margin-left: 40px;
 }
 
 /* Contact Styling */
