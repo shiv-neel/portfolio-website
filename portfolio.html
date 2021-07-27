@@ -13,7 +13,9 @@
     <body>
         <nav class='navbar'>
             <div class='max-width'>
-                <div class='logo'><a href='#'> &lt;shivneel.io&gt; <i class='fas fa-cloud'></i></a></div>
+                <div class='logo'><a class='logo' href='#'> &lt;shivneel.io&gt; <i class='fas fa-cloud' id='#cloud'></i></a>
+                    <script src='portfolio_animations.js'></script>
+                </div>
                 <ul class='menu'>
                     
                     <li><a href='#home'>Home <i class="fas fa-door-open"></i></a></li>
@@ -45,21 +47,37 @@
         <section class="about" id='about'>
             <div class="max-width">
                 <h1 class='vision-title'>My Vision</h1>
-                <p class='vision-content'><strong>The less problems in front of us, the more solutions we can discover.</strong> 
-                    This philosophy tenaciously guides my vision as a software developer: to make the life of myself and those around me less difficult than it needs to be.
-                    Each removed problem from one's life creates time and resources to dedicate to something else equally or more worthwhile. 
-                    I strive to propogate these beliefs through much of my work as an engineer.
+                <p class='vision-content'><strong>Insert some woke statement here. </strong> 
+                    We are currently witnessing a golden era of technological development. 
+                    Computers are everywhere, and humans spend virtully all of their waking time around them. As an engineer, I envision a society
+                    that features seamless human-computer interaction. This vision guides my work not only as software developer, but a problem solver
+                    on the frontlines of tomorrow's innovation.
                 </p>
                 <h1 class='title'>About Me</h1>
                 <br><br>
                 <div class="about-content">                    
                     <div class='column left'>
-                        <img src='chipic2.JPG' alt='Picture of Me'>                       
+
+                                <div class='content'>
+                                    <img src='chipic2.JPG' alt='Picture of Me'> 
+                                </div>
+                                <br>
+                            <p class='aboutme-attributes'><i class='fas attribute-logo fa-map-pin'></i> Barrington, IL</p><br>
+                            <p class='aboutme-attributes'><i class='fas attribute-logo fa-school'></i> Iowa State University</p><br>                        
+                            <p class='aboutme-attributes'><i class='fas attribute-logo fa-user-graduate'></i> Fall 2023</p><br>   
                     </div>
                     <div class='column right'>
-                        <p class='text'>I am a </p>                         
+                        
+                        
+                        <p class='about-text'>
+                            Hi there! Welcome to my homepage. I am a Junior currently pursuing a degree in Computer Science, while minoring in Data Science and Psychology.<br><br>
+                            Within computer science, my primary fields of interest are Front-End Development, Human-Computer Interaction (HCI), and Machine Learning. As a former mechanical engineering student, I
+                        also have experience working with CAD software and a firm grasp of engineering fundamentals, ranging from thermodynamics to mechanical design.<br><br>
+                            As a developer, I value my analyticl ability and aim to keep my brain sharp at all times. When I am not coding or learning new frameworks, 
+                            I read non-fiction books about dense concepts, play problem-solving games such as chess and sudoku, or practice classical music on the piano. 
+                    </p>                         
                     </div> 
-                <a href='#' class='resume'><i class='fas fa-download'></i> Download Resume</a>                   
+                <a href='deez_nuts.jpeg' target='_blank' class='resume'><i class='fas fa-download'></i> Download Resume</a>                   
                 </div>
                 <br><br><br>
             </div>
@@ -75,7 +93,10 @@
                     <div class='service'>
                         <i class="fas fa-code-branch fa-5x"></i>
                         <h3 class='service-header'>Front-End Development</h3><br>
-                            <p class='service-info'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus dolorum eveniet debitis cum eligendi accusantium quidem molestias libero voluptatem mollitia modi beatae enim assumenda, consectetur officiis possimus fugiat, illo nam quas doloribus deserunt nihil ad praesentium itaque. Quos, incidunt sunt?</p>
+                            <p class='service-info'>As aforementioned in my vision statement, user experience is a vital measure of an product's 
+                                efficacy. As a front-end developer I design responsive, interactive websites such as this one with a strong emphasis
+                                on UX and UI design, without compromising the quality of content and inspiration. 
+                            </s></p>
                             <br>
                         </div>
                     <div class='service'>
@@ -92,7 +113,7 @@
                         <h3 class='service-header'>K-12 Private Tutoring</h3><br>
                         
                             <p class='service-info'> As a tutor for <strong>over 4 years</strong>, I have been perfecting my ability to tailor my teaching style to 
-                                each client's individual personality and learning preference. Many students today are unfortunate victims of a <strong>fixed mindset</strong>, where they believe
+                                each client's individual personality and learning preference. Many students today are victims of a <strong>fixed mindset</strong>, where they believe
                                 their intelligence is immutable. I strive to cultivate in them a growth mindset with every session.
                                 
                             </p>
@@ -128,8 +149,8 @@
                         <div class='card'>
                             <div class="face face1">
                                 <div class="content">
-                                    <i class="proj-icon fas fa-chess"></i>
-                                    <h3 class='project-name'>Chess</h3>
+                                    <i class="proj-icon fas fa-coins" id="coins"></i>
+                                    <h3 class='project-name'>Connect4 AI</h3>
                                 </div>
                             </div>
                             <div class="face face2">
@@ -143,8 +164,8 @@
                         <div class='card'>
                             <div class="face face1">
                                 <div class="content">
-                                    <i class="proj-icon fas fa-crosshairs"></i>
-                                    <h3 class='project-name'>proj3</h3>
+                                    <i class="proj-icon fas fa-cloud-sun-rain" id='weather'></i>
+                                    <h3 class='project-name'>Weather Application</h3>
                                 </div>
                             </div>
                             <div class="face face2">

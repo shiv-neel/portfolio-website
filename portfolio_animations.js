@@ -6,8 +6,15 @@ $(document).ready(function() {
         else {
             $('.navbar').removeClass('sticky')
         }
-    })
+    }),
+    $('.logo').hover(function () {
+
+        $('.logo').toggleClass('.logo-rotate');
+      
+      });
 })
+
+
 
 
 

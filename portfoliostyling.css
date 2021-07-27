@@ -12,7 +12,7 @@
 /* navbar styling */
 :root {
     --clr-accent: rgb(29, 29, 202);
-    --clr-hover: rgb(160, 160, 160);
+    --clr-hover: rgb(240, 240, 240);
     --clr-dark: rgb(39, 39, 46);
 }
 
@@ -42,16 +42,16 @@
     word-spacing: 2em;
 }
 
-.navbar .logo a{
+.navbar .logo{
      font-size: 24px;
      font-weight: 500;
      color: white;
      font-family: 'Courier New', monospace;
-     transition: color 0.3s ease-in-out;
+     transition: all ease-in-out 0.25s;
 }
 
-.navbar .logo a:hover {
-    color: transparent;
+.logo-rotate {
+    transform: rotate(90deg);
     /* add a cool animation here */
 }
 
@@ -65,7 +65,7 @@
     font-size: 18px;
     font-weight: 300;
     margin-left: 35px;
-    transition: 0.1s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 .navbar .menu li a:hover {
@@ -147,6 +147,7 @@
     }
     .about .about-content .right{
         flex: 100%;
+        
     }
     .max-width {
         max-width: 800px;
@@ -298,19 +299,42 @@
     object-fit: cover;
     flex-wrap: wrap;
     border-radius: 20px;
-    box-shadow: 0px 20px 50px rgba(0,0,0,1);
+    box-shadow: 0px 20px 50px rgba(0,0,0,0.8);
+    margin-bottom: 40px;
+    transition: 0.3s all ease-in-out;
 }
 
-.about .about-content .right .text {
+.about .about-content .left img:hover{
+    transform: translateY(-50px);
+}
+
+.about .about-content .right .about-text {
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 10px;
+    padding: 40px;
+    transition: 0.3s all ease-in-out;
+}
+.about .about-content .right .about-text:hover {
+    transform: translateY(-50px);
+}
+
+.aboutme-attributes {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    margin-right: 80px;
+    line-height: 0.5;
     
+}
+.attribute-logo {
+ 
+    font-size: 20px;
 }
 
 .about .about-content .right p {
     padding: 0 10px;
-    text-align: justify;
+    text-align: left;
     justify-content: space-between;
 }
 
@@ -340,6 +364,13 @@
     width: 50%;
 }
 
+.about-text {
+    background-color: var(--clr-hover);
+    border-radius: 25px;
+    border-width: 30px;
+    padding: 50px 50px 50px 50px;
+    box-shadow: 0px 20px 50px rgba(0,0,0,0.25);
+}
 
 
 /* Services styling */
@@ -518,6 +549,14 @@
 /* formatting icons that won't cooperate */
 #eye {
     margin-left: 95px;
+}
+
+#coins {
+    margin-left: 25px;
+}
+
+#weather {
+    margin-left: 75px;
 }
 
 /* Contact Styling */
