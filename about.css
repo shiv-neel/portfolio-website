@@ -24,6 +24,7 @@
     transition: all 0.5s ease;
     z-index: 999;
     background: var(--clr-accent);
+    box-shadow: 2px 2px 10px rgba(0 ,0 ,8, 0.25);
 }
 
 .navbar .max-width {
