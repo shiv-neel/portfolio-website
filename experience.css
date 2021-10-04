@@ -277,8 +277,8 @@
     margin-left: 95px;
 }
 
-#coins {
-    margin-left: 25px;
+#stopwatch {
+    margin-left: 22px;
 }
 
 #weather {
@@ -291,6 +291,7 @@
     background-size: cover;
     color: white;
     text-align: center;
+    margin: 0 auto;
 }
 .services-title {
     position: relative;
